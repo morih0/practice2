@@ -1,0 +1,15 @@
+public abstract Character{
+  private String name;
+  private int hp;
+  private int mp;
+  
+  public String getName(){
+    return this.name;
+  }
+  
+  public void attack(Monster m){
+    System.out.println(getName() + "の攻撃！");
+    m -= 5;
+    System.out.println("敵に５ポイントのダメージ");
+  }
+}
